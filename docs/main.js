@@ -512,7 +512,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "header {\n  border-bottom: 1px solid #ccc;\n  padding-bottom: 1rem;\n  margin-bottom: 1.6rem;\n  margin-left: 1.5rem;\n  margin-right: 1.5rem;\n}\n\nh1 {\n  font-weight: bold;\n  letter-spacing: -2px;\n}\n"
+module.exports = "header {\n  border-bottom: 1px solid #ccc;\n  padding-bottom: 1rem;\n  margin-top: .5rem;\n  margin-bottom: 1.6rem;\n  margin-left: 1.5rem;\n  margin-right: 1.5rem;\n}\n\nh1 {\n  font-weight: bold;\n  letter-spacing: -2px;\n}\n\n@media only screen and (max-width: 650px) {\n  header {\n    text-align: center;\n  }\n}\n"
 
 /***/ }),
 
@@ -541,7 +541,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-header',
-            template: "\n    <header class=\"navbar\">\n      <h1>CardGameApp</h1>\n    </header>\n  ",
+            template: "\n    <header>\n      <h1>CardGameApp</h1>\n    </header>\n  ",
             styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
         })
     ], HeaderComponent);

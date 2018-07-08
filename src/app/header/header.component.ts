@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <header class="navbar">
+    <header>
       <h1>CardGameApp</h1>
     </header>
   `,
