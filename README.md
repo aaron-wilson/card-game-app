@@ -1,6 +1,8 @@
 # CardGameApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Available at [https://aaron-wilson.github.io/card-game-app/index.html](https://aaron-wilson.github.io/card-game-app/index.html)
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8
 
 ## Development server
 
