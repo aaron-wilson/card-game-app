@@ -6,20 +6,20 @@ import { AboutComponent } from './about.component';
 
 const routes: Routes = [
   {
-    path: 'about',
+    path: 'card-game-app/index.html/about',
     component: AboutComponent
   },
   {
-    path: 'add-card',
+    path: 'card-game-app/index.html/add-card',
     component: AddCardComponent
   },
   {
-    path: 'cards',
+    path: 'card-game-app/index.html',
     component: CardsComponent
   },
   {
     path: '**',
-    redirectTo: '/cards'
+    redirectTo: '/card-game-app/index.html'
   }
 ];
 

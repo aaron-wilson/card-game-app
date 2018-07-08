@@ -99,8 +99,8 @@ var AddCardComponent = /** @class */ (function () {
         this.cardService.addCard(this.card)
             .subscribe(function (card) { return console.log('Card saved:', card); }, function (err) {
             console.error(err);
-            _this.router.navigateByUrl('/cards');
-        }, function () { _this.router.navigateByUrl('/cards'); });
+            _this.router.navigateByUrl('/card-game-app/index.html', { skipLocationChange: true });
+        }, function () { _this.router.navigateByUrl('/card-game-app/index.html', { skipLocationChange: true }); });
     };
     AddCardComponent.prototype.ngOnInit = function () { };
     AddCardComponent = __decorate([
@@ -150,20 +150,20 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var routes = [
     {
-        path: 'about',
+        path: 'card-game-app/index.html/about',
         component: _about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"]
     },
     {
-        path: 'add-card',
+        path: 'card-game-app/index.html/add-card',
         component: _add_card_component__WEBPACK_IMPORTED_MODULE_3__["AddCardComponent"]
     },
     {
-        path: 'cards',
+        path: 'card-game-app/index.html',
         component: _cards_component__WEBPACK_IMPORTED_MODULE_2__["CardsComponent"]
     },
     {
         path: '**',
-        redirectTo: '/cards'
+        redirectTo: '/card-game-app/index.html'
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -393,7 +393,7 @@ var CardsComponent = /** @class */ (function () {
         var j = 0;
         var temp = null;
         for (i = arr.length - 1; i > 0; i -= dec) {
-            console.log('i', i, 'j', j);
+            // console.log('i', i, 'j', j);
             j = Math.floor(Math.random() * (i + 1));
             temp = arr[i];
             arr[i] = arr[j];
@@ -436,7 +436,7 @@ function shuffle(arr) {
     var j = 0;
     var temp = null;
     for (i = arr.length - 1; i > 0; i -= 1) {
-        // console.log('i', i ,'j', j);
+        // console.log('i', i, 'j', j);
         j = Math.floor(Math.random() * (i + 1));
         temp = arr[i];
         arr[i] = arr[j];
@@ -588,7 +588,7 @@ var NavComponent = /** @class */ (function () {
     NavComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-nav',
-            template: "\n    <nav class=\"tabs\">\n      <a routerLink=\"/cards\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">Home</a>\n      <a routerLink=\"/add-card\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">Add Card</a>\n      <a routerLink=\"/about\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">About</a>\n    </nav>\n  ",
+            template: "\n    <nav class=\"tabs\">\n      <a routerLink=\"card-game-app/index.html\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">Home</a>\n      <a routerLink=\"card-game-app/index.html/add-card\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\" skipLocationChange>Add Card</a>\n      <a routerLink=\"card-game-app/index.html/about\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\" skipLocationChange>About</a>\n    </nav>\n  ",
             styles: [__webpack_require__(/*! ./nav.component.css */ "./src/app/nav/nav.component.css")]
         })
     ], NavComponent);

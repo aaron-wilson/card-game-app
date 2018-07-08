@@ -65,9 +65,9 @@ export class AddCardComponent implements OnInit {
         card => console.log('Card saved:', card),
         err => {
           console.error(err);
-          this.router.navigateByUrl('/cards');
+          this.router.navigateByUrl('/card-game-app/index.html', { skipLocationChange: true});
         },
-        () => { this.router.navigateByUrl('/cards'); }
+        () => { this.router.navigateByUrl('/card-game-app/index.html', { skipLocationChange: true}); }
       );
   }
 

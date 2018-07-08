@@ -4,9 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-nav',
   template: `
     <nav class="tabs">
-      <a routerLink="/cards" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      <a routerLink="/add-card" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Add Card</a>
-      <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+      <a routerLink="card-game-app/index.html" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="card-game-app/index.html/add-card" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" skipLocationChange>Add Card</a>
+      <a routerLink="card-game-app/index.html/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" skipLocationChange>About</a>
     </nav>
   `,
   styleUrls: ['./nav.component.css']

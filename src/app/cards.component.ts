@@ -39,7 +39,7 @@ export class CardsComponent implements OnInit {
     let temp = null
 
     for (i = arr.length - 1; i > 0; i -= dec) {
-      console.log('i', i ,'j', j);
+      // console.log('i', i, 'j', j);
       j = Math.floor(Math.random() * (i + 1))
       temp = arr[i]
       arr[i] = arr[j]
@@ -78,7 +78,7 @@ function shuffle(arr) {
   let temp = null
 
   for (i = arr.length - 1; i > 0; i -= 1) {
-    // console.log('i', i ,'j', j);
+    // console.log('i', i, 'j', j);
     j = Math.floor(Math.random() * (i + 1))
     temp = arr[i]
     arr[i] = arr[j]
