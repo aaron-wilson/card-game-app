@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html {
+  background: #eee;
+  font-size: 16px;
+}
+
+h1:after, .my-card h6:after {
+  content: "™";
+  font-size: 1rem;
+  vertical-align: super;
+  margin-left: 0.192rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 1.1em 1.7em;
+}
+
+.my-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.my-card, .flex-dummy {
+  width: 12.5rem;
+  height: 17.5rem;
+  margin: 1em;
+}
+
+.flex-dummy {
+  height: 0;
+  margin: 0 1em;
+}
+
+.my-card {
+  background: #231e1e;
+  border-color: black;
+  border-radius: 1rem;
+  display: inline-block;
+  color: white;
+  padding: 1rem 2rem;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+}
+
+.my-card h4 {
+  font-size: 1.2rem;
+  line-height: 125%;
+}
+
+.my-card h6 {
+  position: absolute;
+  font-size: .8rem;
+  margin-top: 1.618rem;
+  opacity: 0.2;
+  bottom: 0.618rem;
+  left: 1.6rem;
+  z-index: 1;
+}
+
+.my-card h6:after {
+  font-size: 60%;
+  margin-left: 1px;
+}
+
+.my-card:hover {
+  cursor: pointer;
+}

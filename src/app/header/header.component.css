@@ -1,0 +1,12 @@
+header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1.6rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: -2px;
+}

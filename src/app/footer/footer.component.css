@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  height: 5rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 2.5rem 0;
+  color: #999;
+}
+
+footer .heart {
+  color: #cf2e31;
+}
