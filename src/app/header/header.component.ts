@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
     <header>
-      <h1>CardGameApp</h1>
+      <h1>Card Game App</h1>
     </header>
   `,
   styleUrls: ['./header.component.css']

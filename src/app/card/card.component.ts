@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
       <h4 [style.visibility]="isHidden ? 'hidden' : 'visible'">
         <ng-content></ng-content>
       </h4>
-      <h6>CardGameApp</h6>
+      <h6>Card Game App</h6>
     </div>
   `,
   styles: []

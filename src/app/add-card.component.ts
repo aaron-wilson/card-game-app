@@ -31,7 +31,7 @@ import { CardService } from './services/card.service';
       <div class="my-cards my-card-preview">
         <div class="my-card">
           <h4>{{ question }}</h4>
-          <h6>CardGameApp</h6>
+          <h6>Card Game App</h6>
         </div>
       </div>
     </section>

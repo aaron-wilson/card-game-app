@@ -106,7 +106,7 @@ var AddCardComponent = /** @class */ (function () {
     AddCardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-add-card',
-            template: "\n    <section id=\"add-card\">\n      <div class=\"form-group\">\n        <form\n          name=\"add-card\"\n          (ngSubmit)=\"handleSubmit(addCardForm)\"\n          #addCardForm=\"ngForm\">\n          <fieldset ngModelGroup=\"card\">\n            <input\n              class=\"form-control\"\n              [(ngModel)]=\"question\"\n              type=\"text\"\n              name=\"question\"\n              placeholder=\"...\"\n              required\n              maxlength=\"255\">\n          </fieldset>\n          <div class=\"my-btn-wrapper\">\n            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n          </div>\n        </form>\n      </div>\n      <div class=\"my-cards my-card-preview\">\n        <div class=\"my-card\">\n          <h4>{{ question }}</h4>\n          <h6>CardGameApp</h6>\n        </div>\n      </div>\n    </section>\n  ",
+            template: "\n    <section id=\"add-card\">\n      <div class=\"form-group\">\n        <form\n          name=\"add-card\"\n          (ngSubmit)=\"handleSubmit(addCardForm)\"\n          #addCardForm=\"ngForm\">\n          <fieldset ngModelGroup=\"card\">\n            <input\n              class=\"form-control\"\n              [(ngModel)]=\"question\"\n              type=\"text\"\n              name=\"question\"\n              placeholder=\"...\"\n              required\n              maxlength=\"255\">\n          </fieldset>\n          <div class=\"my-btn-wrapper\">\n            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n          </div>\n        </form>\n      </div>\n      <div class=\"my-cards my-card-preview\">\n        <div class=\"my-card\">\n          <h4>{{ question }}</h4>\n          <h6>Card Game App</h6>\n        </div>\n      </div>\n    </section>\n  ",
             styles: [
                 '.my-btn-wrapper { text-align: center; margin: 1em 0; }',
                 '.my-card-preview { margin-top: 1.5em; }'
@@ -224,7 +224,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'CardGameApp';
+        this.title = 'Card Game App';
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -342,7 +342,7 @@ var CardComponent = /** @class */ (function () {
     CardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-card',
-            template: "\n    <div class=\"my-card\" (click)=\"isHidden=!isHidden\">\n      <h4 [style.visibility]=\"isHidden ? 'hidden' : 'visible'\">\n        <ng-content></ng-content>\n      </h4>\n      <h6>CardGameApp</h6>\n    </div>\n  ",
+            template: "\n    <div class=\"my-card\" (click)=\"isHidden=!isHidden\">\n      <h4 [style.visibility]=\"isHidden ? 'hidden' : 'visible'\">\n        <ng-content></ng-content>\n      </h4>\n      <h6>Card Game App</h6>\n    </div>\n  ",
             styles: []
         })
     ], CardComponent);
@@ -541,7 +541,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-header',
-            template: "\n    <header>\n      <h1>CardGameApp</h1>\n    </header>\n  ",
+            template: "\n    <header>\n      <h1>Card Game App</h1>\n    </header>\n  ",
             styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
         })
     ], HeaderComponent);
